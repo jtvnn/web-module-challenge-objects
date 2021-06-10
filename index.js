@@ -136,7 +136,7 @@ function getLastReview(array) {
   return `${array[array.length - 1].name} gave the restaurant a ${array[array.length -1].rating} star review, and their feedback was: ${array[array.length - 1].feedback}`;
 }
 
-
+getLastReview(reviews);
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
