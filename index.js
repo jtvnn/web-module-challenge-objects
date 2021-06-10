@@ -154,9 +154,15 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+function getReviewByRating(array, pRating) {
+  const results = [];
+  for(let i=0; i<array.length; i++){
+    if(array[i].rating >= pRating && array[i].rating < pRating + 0.9){
+      results.push(array[i]);
+    }
   }
+  return results;
+ }
 
   
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   
